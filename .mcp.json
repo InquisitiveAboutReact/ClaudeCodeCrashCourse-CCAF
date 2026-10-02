@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "filesystem-extended": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "D:\\Studies and Projects\\Claude Projects\\Claude Crash Course\\claude-practice-app"
+      ]
+    },
+    "git": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-git",
+        "--repository",
+        "D:\\Studies and Projects\\Claude Projects\\Claude Crash Course\\claude-practice-app"
+      ]
+    }
+  }
+}

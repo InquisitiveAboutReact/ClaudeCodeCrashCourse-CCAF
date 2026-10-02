@@ -1,0 +1,64 @@
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text-color, #000);
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--bg-color, #fff);
+  border: 1px solid #ccc;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.taskItem:hover {
+  border-color: #999;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.taskTitle {
+  flex: 1;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.priorityBadge {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.priorityLow {
+  background-color: #e0e0e0;
+  color: #666;
+}
+
+.priorityMedium {
+  background-color: #ffeaa7;
+  color: #d35400;
+}
+
+.priorityHigh {
+  background-color: #ff7675;
+  color: #fff;
+}

@@ -1,0 +1,16 @@
+.toggleButton {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: var(--bg-color, #fff);
+  color: var(--text-color, #000);
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.toggleButton:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}

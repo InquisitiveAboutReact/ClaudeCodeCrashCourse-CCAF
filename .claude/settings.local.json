@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "filesystem-extended"
+  ],
+  "enableAllProjectMcpServers": true
+}
