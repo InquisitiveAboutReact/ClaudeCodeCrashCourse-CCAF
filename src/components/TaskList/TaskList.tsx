@@ -1,5 +1,5 @@
 import React from 'react';
-import { Task } from '../../types/task';
+import type { Task } from '../../types/task';
 import styles from './TaskList.module.css';
 
 interface TaskListProps {
@@ -15,11 +15,11 @@ export const TaskList: React.FC<TaskListProps> = ({ tasks, onToggleTask }) => {
           <input
             type="checkbox"
             className={styles.checkbox}
-            checked={task.completed}
+            checked={task.status === 'completed'}
             onChange={() => onToggleTask(task.id)}
-            aria-label={`Mark ${task.title} as ${task.completed ? 'incomplete' : 'complete'}`}
+            aria-label={`Mark ${task.title} as ${task.status === 'completed' ? 'incomplete' : 'complete'}`}
           />
-          <span className={`${styles.taskTitle} ${task.completed ? styles.completed : ''}`}>
+          <span className={`${styles.taskTitle} ${task.status === 'completed' ? styles.completed : ''}`}>
             {task.title}
           </span>
           <span className={`${styles.priorityBadge} ${styles[`priority${task.priority.charAt(0).toUpperCase() + task.priority.slice(1)}`]}`}>
